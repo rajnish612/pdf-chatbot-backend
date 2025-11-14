@@ -12,7 +12,7 @@ langgraph-prebuilt
 langgraph-checkpoint
 faiss-cpu
 sentence-transformers
-torch==2.3.0+cpu
+
 PyMuPDF
 python-dotenv
 requests
