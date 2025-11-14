@@ -1,0 +1,152 @@
+2025-11-15 00:00:29,479 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:00:29,479 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:00:33,981 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:00:34,990 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:00:49,348 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:00:49,349 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:00:53,727 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:00:54,842 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:01:10,225 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:01:10,225 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:01:14,113 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:01:15,112 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:02:56,775 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:02:56,775 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:03:00,788 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:03:01,940 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:03:01,954 - python - INFO - Successfully initialized agent
+2025-11-15 00:03:01,959 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:03:01,959 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:03:01,959 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:03:01,959 - python - INFO - API is ready to accept requests
+2025-11-15 00:03:01,961 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:03:17,940 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:03:17,941 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:03:22,789 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:03:23,794 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:03:23,800 - python - INFO - Successfully initialized agent
+2025-11-15 00:03:23,803 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:03:23,803 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:03:23,803 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:03:23,803 - python - INFO - API is ready to accept requests
+2025-11-15 00:03:38,444 - python - INFO - Upload request received for file: WEB PROGRAMMING.pdf
+2025-11-15 00:03:38,444 - python - INFO - Processing PDF file: WEB PROGRAMMING.pdf, size: 370233 bytes
+2025-11-15 00:03:38,490 - python - INFO - Extracted text from 10 pages
+2025-11-15 00:03:38,492 - python - INFO - Created 33 text chunks
+2025-11-15 00:03:39,146 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-15 00:03:39,147 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-15 00:03:39,147 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-15 00:03:39,182 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-15 00:03:39,192 - python - INFO - Successfully created vector database with 33 chunks
+2025-11-15 00:03:47,415 - python - INFO - Query request received: hey tell me about this pdf...
+2025-11-15 00:03:47,416 - python - INFO - Processing query with agent: hey tell me about this pdf
+2025-11-15 00:03:47,451 - python - INFO - Retrieved context for query: hey tell me about this pdf...
+2025-11-15 00:03:48,484 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-15 00:03:48,499 - python - INFO - Successfully generated answer for query: hey tell me about this pdf...
+2025-11-15 00:03:55,929 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:04:11,078 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:04:11,078 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:04:15,142 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:04:16,158 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:04:16,164 - python - INFO - Successfully initialized agent
+2025-11-15 00:04:16,166 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:04:16,166 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:04:16,167 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:04:16,167 - python - INFO - API is ready to accept requests
+2025-11-15 00:04:36,011 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:04:51,100 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:04:51,100 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:04:55,021 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:04:56,039 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:04:56,046 - python - INFO - Successfully initialized agent
+2025-11-15 00:04:56,049 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:04:56,049 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:04:56,049 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:04:56,049 - python - INFO - API is ready to accept requests
+2025-11-15 00:05:08,376 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:05:23,854 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:05:23,854 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:05:28,474 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:05:29,515 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:05:29,522 - python - INFO - Successfully initialized agent
+2025-11-15 00:05:29,526 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:05:29,526 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:05:29,527 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:05:29,527 - python - INFO - API is ready to accept requests
+2025-11-15 00:05:29,528 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:05:44,473 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:05:44,474 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:05:48,878 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:05:49,881 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:05:49,887 - python - INFO - Successfully initialized agent
+2025-11-15 00:05:49,890 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:05:49,890 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:05:49,890 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:05:49,890 - python - INFO - API is ready to accept requests
+2025-11-15 00:05:49,891 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:06:04,608 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:06:04,608 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:06:08,547 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:06:09,586 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:06:09,594 - python - INFO - Successfully initialized agent
+2025-11-15 00:06:09,597 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:06:09,597 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:06:09,598 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:06:09,598 - python - INFO - API is ready to accept requests
+2025-11-15 00:06:17,462 - python - INFO - Upload request received for file: WEB PROGRAMMING.pdf
+2025-11-15 00:06:17,463 - python - INFO - Processing PDF file: WEB PROGRAMMING.pdf, size: 370233 bytes
+2025-11-15 00:06:17,499 - python - INFO - Extracted text from 10 pages
+2025-11-15 00:06:17,500 - python - INFO - Created 33 text chunks
+2025-11-15 00:06:18,158 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-15 00:06:18,158 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-15 00:06:18,158 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-15 00:06:18,188 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-15 00:06:18,196 - python - INFO - Successfully created vector database with 33 chunks
+2025-11-15 00:06:20,937 - python - INFO - Query request received: hre...
+2025-11-15 00:06:20,937 - python - INFO - Processing query with agent: hre
+2025-11-15 00:06:20,972 - python - INFO - Retrieved context for query: hre...
+2025-11-15 00:06:21,352 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-15 00:06:21,366 - python - INFO - Successfully generated answer for query: hre...
+2025-11-15 00:06:37,928 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:06:53,051 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:06:53,051 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:06:57,526 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:06:58,535 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:06:58,541 - python - INFO - Successfully initialized agent
+2025-11-15 00:06:58,544 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:06:58,544 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:06:58,544 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:06:58,544 - python - INFO - API is ready to accept requests
+2025-11-15 00:06:58,545 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:07:13,182 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:07:13,182 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:07:17,170 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:07:18,171 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:07:18,177 - python - INFO - Successfully initialized agent
+2025-11-15 00:07:18,181 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:07:18,181 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:07:18,181 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:07:18,181 - python - INFO - API is ready to accept requests
+2025-11-15 00:07:18,182 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:07:44,894 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:07:44,894 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:07:49,181 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:07:50,184 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:07:50,189 - python - INFO - Successfully initialized agent
+2025-11-15 00:07:50,191 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:07:50,192 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:07:50,192 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:07:50,192 - python - INFO - API is ready to accept requests
+2025-11-15 00:07:50,192 - python - INFO - Shutting down PDF ChatBot API...
+2025-11-15 00:08:04,311 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-15 00:08:04,311 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-15 00:08:08,320 - python - INFO - Successfully initialized text splitter and embeddings
+2025-11-15 00:08:09,319 - python - INFO - Successfully initialized ChatGroq model: llama-3.1-8b-instant
+2025-11-15 00:08:09,325 - python - INFO - Successfully initialized agent
+2025-11-15 00:08:09,327 - python - INFO - Starting PDF ChatBot API...
+2025-11-15 00:08:09,327 - python - INFO - Model: llama-3.1-8b-instant
+2025-11-15 00:08:09,327 - python - INFO - Client URL: http://localhost:3000
+2025-11-15 00:08:09,328 - python - INFO - API is ready to accept requests
+2025-11-15 00:08:41,936 - python - INFO - Shutting down PDF ChatBot API...
