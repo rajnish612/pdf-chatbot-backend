@@ -108,7 +108,16 @@ async def generate_answer(request: QueryRequest):
             raise HTTPException(status_code=400, detail="Please provide a question")
 
         ai_response = agent.invoke(
-            {"messages": [{"role": "user", "content": request.query}]}, config
+            {
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": f"always remeber you are a RAG agent and your developer is {os.getenv("DEVELOPER_NAME")}",
+                    },
+                    {"role": "user", "content": request.query},
+                ]
+            },
+            config,
         )
 
         if not ai_response["messages"][-1].content:
