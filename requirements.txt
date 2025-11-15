@@ -11,10 +11,11 @@ langgraph
 langgraph-prebuilt
 langgraph-checkpoint
 faiss-cpu
-sentence-transformers
-
+sentence-transformers==2.3.0
+torch==2.2.0+cpu
+torchvision==0.17.0+cpu
+torchaudio==2.2.0+cpu
 PyMuPDF
 python-dotenv
 requests
 pydantic
-pydantic-settings

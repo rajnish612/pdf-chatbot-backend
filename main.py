@@ -1,4 +1,3 @@
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from fastapi import FastAPI, File, UploadFile, HTTPException
@@ -6,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from langchain_core.documents import Document
 from langchain.agents.middleware import dynamic_prompt, ModelRequest
 from langchain.agents import create_agent
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import BaseModel
@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 import fitz
 import io
 import os
+
 
 load_dotenv()
 
@@ -26,7 +27,10 @@ app.add_middleware(
 )
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=200)
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embeddings =  HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+)
+
 model = ChatGroq(model=os.getenv("MODEL"), groq_api_key=os.getenv("GROQ_API_KEY"))
 vector_db = None
 
