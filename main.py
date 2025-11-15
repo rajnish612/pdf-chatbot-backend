@@ -5,18 +5,19 @@ from fastapi.middleware.cors import CORSMiddleware
 from langchain_core.documents import Document
 from langchain.agents.middleware import dynamic_prompt, ModelRequest
 from langchain.agents import create_agent
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import BaseModel
 from dotenv import load_dotenv
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+
 import fitz
 import io
 import os
 
 
 load_dotenv()
-
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -27,9 +28,8 @@ app.add_middleware(
 )
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=200)
-embeddings =  HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2",
-)
+embeddings = GoogleGenerativeAIEmbeddings(model=os.getenv("EMBEDDING_MODEL"))
+
 
 model = ChatGroq(model=os.getenv("MODEL"), groq_api_key=os.getenv("GROQ_API_KEY"))
 vector_db = None
@@ -131,5 +131,6 @@ async def root():
 
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8000)) 
+
+    port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)

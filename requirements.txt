@@ -11,8 +11,7 @@ langgraph
 langgraph-prebuilt
 langgraph-checkpoint
 faiss-cpu
-sentence-transformers==2.3.0
-
+langchain-google-genai
 PyMuPDF
 python-dotenv
 requests
