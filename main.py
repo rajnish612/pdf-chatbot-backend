@@ -112,7 +112,7 @@ async def generate_answer(request: QueryRequest):
                 "messages": [
                     {
                         "role": "system",
-                        "content": f"always remeber you are a RAG agent and your developer is {os.getenv("DEVELOPER_NAME")}",
+                        "content": f"always remeber you are a RAG agent and your developer is {os.getenv("DEVELOPER_NAME")} do not mix with pdf context",
                     },
                     {"role": "user", "content": request.query},
                 ]
