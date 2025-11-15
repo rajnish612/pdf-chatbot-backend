@@ -1,3 +1,4 @@
+--no-deps
 fastapi
 uvicorn[standard]
 python-multipart
@@ -11,10 +12,8 @@ langgraph
 langgraph-prebuilt
 langgraph-checkpoint
 faiss-cpu
-sentence-transformers==2.3.0
-torch==2.2.0+cpu
-torchvision==0.17.0+cpu
-torchaudio==2.2.0+cpu
+sentence-transformers --no-deps
+
 PyMuPDF
 python-dotenv
 requests
